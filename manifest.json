@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Thumbnail Randomizer",
+  "version": "1.0",
+  "type": "module",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
